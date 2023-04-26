@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+/* :root {
+    --fontBase: 'Share Tech Mono', monospace;
+    --colorText: #45f3ff;
+    --background: black;
+  } */
+
+/* var(--primary) */
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    color: #45f3ff;
+    font-family: 'Share Tech Mono', monospace;
+    
+}
+
+.card {
+    background-color: black;
+    border-radius: 25px;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #45f3ff;
+    perspective: 1000px;
+}
+
+.card-body {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 25px;
+}
+
+.card:hover .card-body {
+    transform: rotateY(180deg);
+}
+
+.card-title, .card-text {
+    position: absolute;
+    border-radius: 25px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card-title {
+    background-color: black;
+    text-align: center;
+    border-radius: 25px;
+    color: #45f3ff;
+}
+  
+.card-text {
+    color: #45f3ff;
+    border-radius: 25px;
+    transform: rotateY(180deg);
+}
+
+.jumbotron {
+    background-color: black;
+    border-bottom: 2px solid #45f3ff;
+}
+
+.lead {
+    color: #45f3ff;
+}
+
+.navbar {
+    color: #45f3ff;
+}
+
+.navbar:hover {
+    color: #45f3ff;
+}
+
+.nav-link {
+    color: #45f3ff;
+}
+
+.jumbo-text-color {
+    left: 100px;
+}
+
+.jumbo-text-color h1 {
+    color: #fff;
+    font-size: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+  
+.jumbo-text-color h1:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #45f3ff;
+}
+  
+.jumbo-text-color h1:nth-child(2) {
+    color: #45f3ff;
+    animation: animate 4s ease-in-out infinite;
+}
+  
+@keyframes animate {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 45%,
+        16% 45%,
+        35% 55%,
+        55% 65%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  
+    50% {
+      clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+      );
+   }
+}
+
+.dropdown-menu {
+    background-color: black;
+    border-bottom: 1px solid #45f3ff;
+}
+
+.dropdown-item {
+    color: #45f3ff;
+}
+
+.dropdown-item:hover {
+    background-color: black;
+    color: white;
+}
+
+.h2-color { 
+    color: #45f3ff;
+    font-weight: bold;
+    font-size: 300%;
+}
+
+
+/* Name email box remover */
+.form-group input {
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #45f3ff;
+}
+
+.form-group textarea {
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #45f3ff;
+}
